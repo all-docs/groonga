@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_ctx_use</TITLE></HEAD>
+<BODY>
+<H1>grn_ctx_use</H1><PRE>__attribute__((dllimport)) grn_rc grn_ctx_use(grn_ctx *ctx, grn_obj *db)</PRE><PRE>/**
+ * \brief Set the database that the context is using.
+ *
+ * You can initialize it if you specify `NULL` for the parameter `db`.
+ *
+ * \attention Don't use it with context that has \ref GRN_CTX_PER_DB flag.
+ *
+ * \param ctx The context object.
+ * \param db The database object.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

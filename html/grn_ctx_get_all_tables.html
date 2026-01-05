@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_ctx_get_all_tables</TITLE></HEAD>
+<BODY>
+<H1>grn_ctx_get_all_tables</H1><PRE>__attribute__((dllimport)) grn_rc grn_ctx_get_all_tables(grn_ctx *ctx, grn_obj *tables_buffer)</PRE><PRE>/**
+ * \brief Retrieve all tables from the database that the context is using.
+ *
+ * \note Ensure that `tables_buffer` is properly initialized as a \ref
+ *       GRN_PVECTOR using \ref GRN_PTR_INIT with the \ref GRN_OBJ_VECTOR flag
+ *       before invoking this function.
+ *
+ * \attention After processing the tables, it is essential to release the
+ *            allocated resources by un-referring each table object and
+ *            finalizing the `tables_buffer` using \ref GRN_OBJ_FIN. Otherwise,
+ *            memory leaks may occur.
+ *
+ * Here is an example of how to use \ref grn_ctx_get_all_tables to retrieve and
+ * process all tables:
+ *
+ * ```c
+ * grn_rc rc;
+ * grn_obj tables;
+ * int i;
+ * int n_tables;
+ *
+ * // Initialize the tables buffer as a vector of `grn_obj *`.
+ * GRN_PTR_INIT(&amp;tables, GRN_OBJ_VECTOR, GRN_ID_NIL);
+ *
+ * // Retrieve all tables in database that the context is using.
+ * rc = grn_ctx_get_all_tables(ctx, &amp;tables);
+ * if (rc != GRN_SUCCESS) {
+ *     GRN_OBJ_FIN(ctx, &amp;tables);
+ *     // Handle error appropriately.
+ *     return rc;
+ * }
+ *
+ * // Calculate the number of tables retrieved.
+ * n_tables = GRN_PTR_VECTOR_SIZE(&amp;tables);
+ * // Iterate over each table.
+ * for (i = 0; i &lt; n_tables; i++) {
+ *     grn_obj *table = GRN_PTR_VALUE_AT(&amp;tables, i);
+ *     // Use table.
+ * }
+ *
+ * // Free resources by un-referring each table when the reference count mode is
+ * // enabled.
+ * for (i = 0; i &lt; n_tables; i++) {
+ *     grn_obj *table = GRN_PTR_VALUE_AT(&amp;tables, i);
+ *     grn_obj_unref(ctx, table);
+ * }
+ * // Finalize the tables buffer.
+ * GRN_OBJ_FIN(ctx, &amp;tables);
+ * ```
+ *
+ * \param ctx The context object.
+ * \param tables_buffer The buffer to store the retrieved tables (must be
+ *                      prepared by the caller).
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

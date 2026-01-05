@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_table_setoperation</TITLE></HEAD>
+<BODY>
+<H1>grn_table_setoperation</H1><PRE>__attribute__((dllimport)) grn_rc grn_table_setoperation(grn_ctx *ctx, grn_obj *table1, grn_obj *table2, grn_obj *res, grn_operator op)</PRE><PRE>/**
+ * \brief Execute the set operation of `table1` and `table2` according to
+ *        the specification of `op` and store the result into `res`.
+ *
+ * \attention The table specified in `res` will be destructed.
+ *
+ * \param ctx The context object.
+ * \param table1 The table.
+ * \param table2 The table.
+ * \param res Specify `table1` or `table2`.
+ * \param op Type of operation.
+ *           - \ref GRN_OP_OR
+ *           - \ref GRN_OP_AND
+ *           - \ref GRN_OP_AND_NOT
+ *           - \ref GRN_OP_ADJUST
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ *         For example, \ref GRN_INVALID_ARGUMENT is returned if `table1` is
+ *         `NULL`.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

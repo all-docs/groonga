@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_obj_set_finalizer</TITLE></HEAD>
+<BODY>
+<H1>grn_obj_set_finalizer</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_set_finalizer(grn_ctx *ctx, grn_obj *obj, grn_proc_func *func)</PRE><PRE>/**
+ * \brief Set the callback function when finalizing the object.
+ *
+ * \param ctx The context object.
+ * \param obj Target object. Table, table cursor, column, procedure, and
+ *            expression can be specified.
+ * \param func Callback function when finalizing.
+ *
+ * \return \ref GRN_SUCCESS on success, \ref GRN_INVALID_ARGUMENT if `obj`
+ *         is not table, table cursor, column, procedure, or expression.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

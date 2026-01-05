@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_table_get</TITLE></HEAD>
+<BODY>
+<H1>grn_table_get</H1><PRE>__attribute__((dllimport)) grn_id grn_table_get(grn_ctx *ctx, grn_obj *table, const void *key, unsigned int key_size)</PRE><PRE>/**
+ * \brief It finds a record that has `key` parameter and returns ID of the found
+ *        record. If table parameter is a database, it finds an object (table,
+ *        column and so on) that has key parameter and returns ID of the found
+ *        object.
+ *
+ * \param ctx The context object
+ * \param table The table or database
+ * \param key The record or object key to be found
+ * \param key_size Length of `key`
+ *
+ * \return ID of the found object on success, \ref GRN_ID_NIL on not found or
+ *         error
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

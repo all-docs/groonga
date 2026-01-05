@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_ctx_open</TITLE></HEAD>
+<BODY>
+<H1>grn_ctx_open</H1><PRE>__attribute__((dllimport)) grn_ctx *grn_ctx_open(int flags)</PRE><PRE>/**
+ * \brief Open the context.
+ *
+ * \note This function also allocates the context itself. However,
+ *       \ref grn_ctx_init requires the caller to allocate a context itself.
+ *
+ * \attention The context opened with this function should be closed with
+ *            \ref grn_ctx_close.
+ *
+ * \param flags Initialization options.
+ *
+ * \return Initialized context object, `NULL` if initialization fails.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

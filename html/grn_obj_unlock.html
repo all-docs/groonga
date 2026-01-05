@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_obj_unlock</TITLE></HEAD>
+<BODY>
+<H1>grn_obj_unlock</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_unlock(grn_ctx *ctx, grn_obj *obj, grn_id id)</PRE><PRE>/**
+ * \brief Unlock an object.
+ *
+ * Unlike \ref grn_obj_clear_lock, which forcefully resets the lock count to
+ * zero, this function decrements the lock count of an object by one.
+ *
+ * \note Locks are managed using a counter mechanism where each lock acquisition
+ *       increments the count by one, and each unlock operation decrements it by
+ *       one. When the lock count reaches zero, the object is considered
+ *       unlocked.
+ *
+ * \attention You should ensure that every call to \ref grn_obj_unlock is paired
+ *            with a call to \ref grn_obj_lock to maintain lock balance. Failing
+ *            to do can lead to deadlocks.
+ *
+ * \param ctx The context object.
+ * \param obj The target object to unlock.
+ * \param id The ID of the target object.
+ *
+ * \return \ref GRN_SUCCESS on success.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

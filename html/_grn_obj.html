@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>_grn_obj</TITLE></HEAD>
+<BODY>
+<H1>_grn_obj</H1><PRE>struct _grn_obj {
+    grn_obj_header header;
+    union {
+        struct {
+            char *head;
+            char *curr;
+            char *tail;
+        } b;
+        struct {
+            int *body;
+            grn_section *sections;
+            uint32_t n_sections;
+        } v;
+    } u;
+}</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

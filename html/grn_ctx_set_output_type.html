@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_ctx_set_output_type</TITLE></HEAD>
+<BODY>
+<H1>grn_ctx_set_output_type</H1><PRE>__attribute__((dllimport)) grn_rc grn_ctx_set_output_type(grn_ctx *ctx, grn_content_type type)</PRE><PRE>/**
+ * \brief Set the output type for the context when executing a command.
+ *
+ * The output type determines the format of the result when executing a command
+ * using \ref grn_expr_exec. If you use \ref grn_ctx_send, the new output type
+ * isn't used because \ref grn_ctx_send sets the output type internally based on
+ * the command.
+ *
+ * \note Normally, you don't need to call this function unless you need to
+ * change the output type explicitly when executing a command using \ref
+ * grn_expr_exec.
+ *
+ * \param ctx The context object.
+ * \param type The new output type to set.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ *         For example, \ref GRN_INVALID_ARGUMENT is returned if `type` is
+ *         invalid.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/output.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_table_sort</TITLE></HEAD>
+<BODY>
+<H1>grn_table_sort</H1><PRE>__attribute__((dllimport)) int grn_table_sort(grn_ctx *ctx, grn_obj *table, int offset, int limit, grn_obj *result, grn_table_sort_key *keys, int n_keys)</PRE><PRE>/**
+ * \brief Sort the records in table and store the results in `result`
+ *
+ * \param ctx The context object
+ * \param table Target table
+ * \param offset Starting offset of the sorted record.
+ *               The records are stored in order from the offset (zero-based).
+ * \param limit Maximum number of records to be stored in `result`
+ * \param result Table to store results
+ * \param keys Array of sort keys
+ *             * keys.key: You can specify either column of table, accessor of
+ *               table, or proc
+ *             * keys.flags: You can specify the next
+ *               * \ref GRN_TABLE_SORT_ASC
+ *               * \ref GRN_TABLE_SORT_DESC
+ *             * keys.offset: Member for internal use
+ * \param n_keys Number of elements in `keys` array
+ *
+ * \return Number of sorted records
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

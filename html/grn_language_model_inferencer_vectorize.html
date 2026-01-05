@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_language_model_inferencer_vectorize</TITLE></HEAD>
+<BODY>
+<H1>grn_language_model_inferencer_vectorize</H1><PRE>__attribute__((dllimport)) grn_rc grn_language_model_inferencer_vectorize(grn_ctx *ctx, grn_language_model_inferencer *inferencer, const char *text, int64_t text_length, grn_obj *output_vector)</PRE><PRE>/**
+ * \brief Vectorize a text.
+ *
+ * In other words, compute embeddings of a text.
+ *
+ * \param ctx The context object.
+ * \param inferencer The inferencer.
+ * \param text The text to vectorize.
+ * \param text_length The byte size of `text`. You can use `-1` if
+ *                    `text` is a `\0`-terminated string.
+ * \param output_vector \ref GRN_DB_FLOAT32 vector as an output. A
+ *                      caller must initialize this by \ref
+ *                      GRN_FLOAT32_INIT and \ref GRN_OBJ_VECTOR.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on
+ *         error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/language_model.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

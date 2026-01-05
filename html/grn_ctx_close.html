@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_ctx_close</TITLE></HEAD>
+<BODY>
+<H1>grn_ctx_close</H1><PRE>__attribute__((dllimport)) grn_rc grn_ctx_close(grn_ctx *ctx)</PRE><PRE>/**
+ * \brief Close the context.
+ *
+ * This function releases memory that was managed by the context and closes.
+ * (Internally, \ref grn_ctx_fin is called to release allocated memory.)
+ *
+ * \attention This function closes the context opened by \ref grn_ctx_open.
+ *            If the context is initialized with \ref grn_ctx_init, it needs
+ *            to be closed with \ref grn_ctx_fin.
+ *
+ * \param ctx The context object initialized by \ref grn_ctx_open.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

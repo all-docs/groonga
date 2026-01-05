@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_table_get_key</TITLE></HEAD>
+<BODY>
+<H1>grn_table_get_key</H1><PRE>__attribute__((dllimport)) int grn_table_get_key(grn_ctx *ctx, grn_obj *table, grn_id id, void *keybuf, int buf_size)</PRE><PRE>/**
+ * \brief Get the key assigned to the ID.
+ *        If the size of the key found is larger than `buf_size`, it is not
+ *        stored in `keybuf`.
+ *
+ * \param ctx The context object.
+ * \param table The table.
+ * \param id The ID to be found.
+ * \param keybuf Buffer to store the record key.
+ * \param buf_size Size of `keybuf` in bytes.
+ *
+ * \return Key size of the record on success, `0` on not existed.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

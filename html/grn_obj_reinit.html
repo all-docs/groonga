@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_obj_reinit</TITLE></HEAD>
+<BODY>
+<H1>grn_obj_reinit</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_reinit(grn_ctx *ctx, grn_obj *obj, grn_id domain, uint8_t flags)</PRE><PRE>/**
+ * \brief Reinitialize an object.
+ *
+ *        Buffer objects, \ref GRN_BULK, \ref GRN_PTR, \ref GRN_UVECTOR,
+ *        \ref GRN_PVECTOR, and \ref GRN_VECTOR, are only target objects
+ *        of this function. You can't use other objects such as table and
+ *        column for this function.
+ *
+ *        This function frees the current data in the specified object
+ *        (`obj`) and initializes the specified `obj` for the specified
+ *        `domain` and `flags`.
+ *
+ *        Before calling this function, the object must have been initialized.
+ *        You can use `GRN_XXX_INIT()` macros such as \ref GRN_TEXT_INIT to
+ *        initialize a buffer object.
+ *
+ * \param ctx The context object.
+ * \param obj The object to be reinitialized. It must be a buffer object.
+ * \param domain The new type that the object can hold.
+ * \param flags `0` or \ref GRN_OBJ_VECTOR. If \ref GRN_OBJ_VECTOR is
+ *              specified, the object will be configured to store a vector of
+ *              values of the specified `domain`.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

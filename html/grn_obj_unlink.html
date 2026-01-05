@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_obj_unlink</TITLE></HEAD>
+<BODY>
+<H1>grn_obj_unlink</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_unlink(grn_ctx *ctx, grn_obj *obj)</PRE><PRE>/**
+ * \brief Unlink an object.
+ *
+ * This calls \ref grn_obj_close only when the specified object (`obj`)
+ * can be closed. See the following description for details.
+ *
+ * **Reference Count Mode**:
+ *
+ * Reference count mode manages object lifetimes by keeping track of
+ * active references. It can be enabled in two ways:
+ * - **Environment Variable**: Set `GRN_ENABLE_REFERENCE_COUNT` to
+ *   `yes` before running the program.
+ * - **API**: Use \ref grn_set_reference_count_enable to enable it at runtime.
+ *
+ * Non reference count mode:
+ *
+ * This is the default. You can disable reference count mode explicitly by
+ * `GRN_ENABLE_REFERENCE_COUNT=no` environment variable.
+ *
+ * The following objects are closed immediately:
+ * - \ref GRN_ACCESSOR
+ * - \ref GRN_BULK
+ * - \ref GRN_DB
+ * - Temporary column
+ * - Temporary table
+ *
+ * Other objects such as persisted tables and columns are not closed.
+ *
+ * Reference count mode:
+ *
+ * You need to enable this explicitly by `GRN_ENABLE_REFERENCE_COUNT=yes`
+ * environment variable.
+ *
+ * The following objects are closed immediately:
+ * - \ref GRN_BULK
+ * - \ref GRN_DB
+ *
+ * The reference count is decreased for the following objects:
+ * - \ref GRN_ACCESSOR
+ * - Column (both persisted and temporary)
+ * - Table (both persisted and temporary)
+ *
+ * If the reference count reaches zero, the object is closed.
+ *
+ * \param ctx The context object.
+ * \param obj The object to be unlinked and freed from memory.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

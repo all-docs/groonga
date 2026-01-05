@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_table_update_by_id</TITLE></HEAD>
+<BODY>
+<H1>grn_table_update_by_id</H1><PRE>__attribute__((dllimport)) grn_rc grn_table_update_by_id(grn_ctx *ctx, grn_obj *table, grn_id id, const void *dest_key, unsigned int dest_key_size)</PRE><PRE>/**
+ * \brief Update the key of the record matching ID in the table.
+ *        This operation supports only \ref GRN_TABLE_DAT_KEY.
+ *
+ * \param ctx The context object.
+ * \param table The \ref GRN_TABLE_DAT_KEY table.
+ * \param id ID of record to be updated.
+ * \param dest_key New key.
+ * \param dest_key_size Size of `dest_key` in bytes.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ *         For example, \ref GRN_OPERATION_NOT_PERMITTED is returned if the
+ *         table other than \ref GRN_TABLE_DAT_KEY is specified.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

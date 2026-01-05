@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>grn_db_unmap</TITLE></HEAD>
+<BODY>
+<H1>grn_db_unmap</H1><PRE>__attribute__((dllimport)) grn_rc grn_db_unmap(grn_ctx *ctx, grn_obj *db)</PRE><PRE>/**
+ * \brief Unmaps all opened tables and columns in the passed database.
+ *        Resources used by these opened tables and columns are freed.
+ *        Normally, this API is needless. Because resources used by opened
+ *        tables and columns are managed by OS automatically.
+ *
+ * \attention This is a thread unsafe API. You can't touch the database while
+ *            this API is running.
+ *
+ * \since 5.0.7
+ *
+ * \param ctx The context object.
+ * \param db The database to be unmaped.
+ *
+ * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
+ */</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/db.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>

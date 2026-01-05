@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>_grn_request_timer</TITLE></HEAD>
+<BODY>
+<H1>_grn_request_timer</H1><PRE>struct _grn_request_timer {
+    void *user_data;
+    void *(*register_func)(const char *, unsigned int, double, void *);
+    void (*unregister_func)(void *, void *);
+    void (*fin_func)(void *);
+}</PRE><TABLE><TBODY><TR><TD>
+Defined in file: </TD><TD>
+C:\Users\timle\Downloads\groonga-main\include/groonga/request_timer.h</TD><TR></TBODY></TABLE>
+</BODY></HTML>
