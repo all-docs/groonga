@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_table_update</TITLE></HEAD>
 <BODY>
-<H1>grn_table_update</H1><PRE>__attribute__((dllimport)) grn_rc grn_table_update(grn_ctx *ctx, grn_obj *table, const void *src_key, unsigned int src_key_size, const void *dest_key, unsigned int dest_key_size)</PRE><PRE>/**
- * \brief Change the key of the record matching the `src_key` of the table.
- *        Specify the new key and its byte length in `dest_key` and
- *        `dest_key_size`. This operation is allowed only for table of
- *        type GRN_TABLE_DAT_KEY
- *
- * \param ctx The context object
- * \param table Target table
- * \param src_key Key of record to be updated
- * \param src_key_size Length of `src_key` (byte)
- * \param dest_key New key
- * \param dest_key_size Length of `dest_key_size` (byte)
- *
- * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
- *         For example, \ref GRN_OPERATION_NOT_PERMITTED is returned if not
- *         \ref GRN_TABLE_DAT_KEY.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_table_update</H1><PRE>__attribute__((dllimport)) grn_rc grn_table_update(grn_ctx *ctx, grn_obj *table, const void *src_key, unsigned int src_key_size, const void *dest_key, unsigned int dest_key_size)</PRE><p class="para-brief"> Change the key of the record matching the `src_key` of the table.        Specify the new key and its byte length in `dest_key` and        `dest_key_size`. This operation is allowed only for table of        type GRN_TABLE_DAT_KEY</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object </dd><dt class="param-name-index-1">table</dt><dd class="param-descr-index-1"> Target table </dd><dt class="param-name-index-2">src_key</dt><dd class="param-descr-index-2"> Key of record to be updated </dd><dt class="param-name-index-3">src_key_size</dt><dd class="param-descr-index-3"> Length of `src_key` (byte) </dd><dt class="param-name-index-4">dest_key</dt><dd class="param-descr-index-4"> New key </dd><dt class="param-name-index-5">dest_key_size</dt><dd class="param-descr-index-5"> Length of `dest_key_size` (byte)</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.         For example, GRN_OPERATION_NOT_PERMITTED  is returned if not         GRN_TABLE_DAT_KEY.  </p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

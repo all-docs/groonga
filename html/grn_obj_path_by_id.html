@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_obj_path_by_id</TITLE></HEAD>
 <BODY>
-<H1>grn_obj_path_by_id</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_path_by_id(grn_ctx *ctx, grn_obj *db, grn_id id, char *buffer)</PRE><PRE>/**
- * \brief Return the pathname of an object ID.
- *
- * \param ctx The context object.
- * \param db The target database object.
- * \param id The ID of the object whose pathname is to be obtained.
- * \param buffer A pre-allocated buffer where the resulting pathname will be
- *               stored. For example, `char buffer[PATH_MAX]` can be used.
- *
- * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
- *         For example, \ref GRN_INVALID_ARGUMENT is returned if `db` is not
- *         a database object or if `buffer` is `NULL`.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_obj_path_by_id</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_path_by_id(grn_ctx *ctx, grn_obj *db, grn_id id, char *buffer)</PRE><p class="para-brief"> Return the pathname of an object ID.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">db</dt><dd class="param-descr-index-1"> The target database object. </dd><dt class="param-name-index-2">id</dt><dd class="param-descr-index-2"> The ID of the object whose pathname is to be obtained. </dd><dt class="param-name-index-3">buffer</dt><dd class="param-descr-index-3"> A pre-allocated buffer where the resulting pathname will be               stored. For example, `char buffer[PATH_MAX]` can be used.</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.         For example, GRN_INVALID_ARGUMENT  is returned if `db` is not         a database object or if `buffer` is `NULL`.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

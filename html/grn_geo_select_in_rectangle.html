@@ -1,36 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_geo_select_in_rectangle</TITLE></HEAD>
 <BODY>
-<H1>grn_geo_select_in_rectangle</H1><PRE>__attribute__((dllimport)) grn_rc grn_geo_select_in_rectangle(grn_ctx *ctx, grn_obj *index, grn_obj *top_left_point, grn_obj *bottom_right_point, grn_obj *res, grn_operator op)</PRE><PRE>/**
- * \brief Select records within a specified rectangular area defined by the
- *        `top_left_point` and `bottom_right_point` parameters.
- *
- * \param ctx The context object.
- * \param index The index column for `TokyoGeoPoint` or `WGS84GeoPoint` type.
- * \param top_left_point The top left point of the target rectangle. Its type
- *                       must be one of the followings.
- *                       - \ref GRN_DB_SHORT_TEXT
- *                       - \ref GRN_DB_TEXT
- *                       - \ref GRN_DB_LONG_TEXT
- *                       - \ref GRN_DB_TOKYO_GEO_POINT
- *                       - \ref GRN_DB_WGS84_GEO_POINT
- * \param bottom_right_point The bottom right point of the target rectangle. Its
- *                           type must be one of the followings.
- *                           - \ref GRN_DB_SHORT_TEXT
- *                           - \ref GRN_DB_TEXT
- *                           - \ref GRN_DB_LONG_TEXT
- *                           - \ref GRN_DB_TOKYO_GEO_POINT
- *                           - \ref GRN_DB_WGS84_GEO_POINT
- * \param res The table to store found record IDs. It must be \ref
- *            GRN_TABLE_HASH_KEY type table.
- * \param op The operator for matched records.
- *           - \ref GRN_OP_OR
- *           - \ref GRN_OP_AND
- *           - \ref GRN_OP_AND_NOT
- *           - \ref GRN_OP_ADJUST
- *
- * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_geo_select_in_rectangle</H1><PRE>__attribute__((dllimport)) grn_rc grn_geo_select_in_rectangle(grn_ctx *ctx, grn_obj *index, grn_obj *top_left_point, grn_obj *bottom_right_point, grn_obj *res, grn_operator op)</PRE><p class="para-brief"> Select records within a specified rectangular area defined by the        `top_left_point` and `bottom_right_point` parameters.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">index</dt><dd class="param-descr-index-1"> The index column for `TokyoGeoPoint` or `WGS84GeoPoint` type. </dd><dt class="param-name-index-2">top_left_point</dt><dd class="param-descr-index-2"> The top left point of the target rectangle. Its type                       must be one of the followings.                       - GRN_DB_SHORT_TEXT                        - GRN_DB_TEXT                        - GRN_DB_LONG_TEXT                        - GRN_DB_TOKYO_GEO_POINT                        - GRN_DB_WGS84_GEO_POINT  </dd><dt class="param-name-index-3">bottom_right_point</dt><dd class="param-descr-index-3"> The bottom right point of the target rectangle. Its                           type must be one of the followings.                           - GRN_DB_SHORT_TEXT                            - GRN_DB_TEXT                            - GRN_DB_LONG_TEXT                            - GRN_DB_TOKYO_GEO_POINT                            - GRN_DB_WGS84_GEO_POINT  </dd><dt class="param-name-index-4">res</dt><dd class="param-descr-index-4"> The table to store found record IDs. It must be GRN_TABLE_HASH_KEY  type table. </dd><dt class="param-name-index-5">op</dt><dd class="param-descr-index-5"> The operator for matched records.           - GRN_OP_OR            - GRN_OP_AND            - GRN_OP_AND_NOT            - GRN_OP_ADJUST </dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga/geo.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_table_lcp_search</TITLE></HEAD>
 <BODY>
-<H1>grn_table_lcp_search</H1><PRE>__attribute__((dllimport)) grn_id grn_table_lcp_search(grn_ctx *ctx, grn_obj *table, const void *key, unsigned int key_size)</PRE><PRE>/**
- * \brief Execute longest common prefix (LCP) search and return ID found.
- *
- * \details Execute longest common prefix search if the table is
- *          \ref GRN_TABLE_PAT_KEY or \ref GRN_TABLE_DAT_KEY.
- *          If the table is \ref GRN_TABLE_HASH_KEY, search by exact match.
- *
- * \param ctx The context object.
- * \param table The table.
- * \param key Search key.
- * \param key_size Length of `key`.
- *
- * \return ID on success, \ref GRN_ID_NIL on not found or error.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_table_lcp_search</H1><PRE>__attribute__((dllimport)) grn_id grn_table_lcp_search(grn_ctx *ctx, grn_obj *table, const void *key, unsigned int key_size)</PRE><p class="para-brief"> Execute longest common prefix (LCP) search and return ID found.</p><p> Execute longest common prefix search if the table is          GRN_TABLE_PAT_KEY  or GRN_TABLE_DAT_KEY.           If the table is GRN_TABLE_HASH_KEY,  search by exact match.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">table</dt><dd class="param-descr-index-1"> The table. </dd><dt class="param-name-index-2">key</dt><dd class="param-descr-index-2"> Search key. </dd><dt class="param-name-index-3">key_size</dt><dd class="param-descr-index-3"> Length of `key`.</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  ID on success, GRN_ID_NIL  on not found or error.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

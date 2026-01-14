@@ -1,30 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_obj_close</TITLE></HEAD>
 <BODY>
-<H1>grn_obj_close</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_close(grn_ctx *ctx, grn_obj *obj)</PRE><PRE>/**
- * \brief Close an object.
- *
- *        This function frees all resources used by the specified object (`obj`)
- *        from memory. All resources include other associated objects.
- *
- *        In general, you must close temporary objects explicitly. You don't
- *        need to close persistent objects explicitly because you can close
- *        persistent objects implicitly by closing a DB object.
- *
- *        You can use \ref grn_obj_unlink instead. It closes temporary objects
- *        but does nothing for most persistent objects. It's useful for normal
- *        use cases.
- *
- * \attention In general, you should not close persistent objects such as tables
- *            and columns for performance reasons. If you close persistent
- *            objects, you need to re-open them when they are needed again. This
- *            is inefficient.
- *
- * \param ctx The context object.
- * \param obj The object to be closed.
- *
- * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_obj_close</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_close(grn_ctx *ctx, grn_obj *obj)</PRE><p class="para-brief"> Close an object.</p><p>        This function frees all resources used by the specified object (`obj`)        from memory. All resources include other associated objects.</p><p>        In general, you must close temporary objects explicitly. You don&#39;t        need to close persistent objects explicitly because you can close        persistent objects implicitly by closing a DB object.</p><p>        You can use grn_obj_unlink  instead. It closes temporary objects        but does nothing for most persistent objects. It&#39;s useful for normal        use cases.</p><p> In general, you should not close persistent objects such as tables            and columns for performance reasons. If you close persistent            objects, you need to re-open them when they are needed again. This            is inefficient.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">obj</dt><dd class="param-descr-index-1"> The object to be closed.</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

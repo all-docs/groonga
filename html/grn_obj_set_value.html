@@ -1,30 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_obj_set_value</TITLE></HEAD>
 <BODY>
-<H1>grn_obj_set_value</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_set_value(grn_ctx *ctx, grn_obj *obj, grn_id id, grn_obj *value, int flags)</PRE><PRE>/**
- * \brief Update the value of a record identified by the given ID in the
- *        specified object.
- *
- *        This function updates the value of the record specified by `id` in the
- *        given object (`obj`). If the corresponding record does not exist, it
- *        returns \ref GRN_INVALID_ARGUMENT.
- *
- * \param ctx The context object.
- * \param obj The target object where the value will be updated.
- * \param id The ID of the record to be updated.
- * \param value The value to be stored in the record.
- * \param flags Only one flag can be specified, depending on the type of the
- *              object (`obj`).
- *              - For a table and a scalar column, use either \ref GRN_OBJ_SET,
- *                \ref GRN_OBJ_INCR, or \ref GRN_OBJ_DECR.
- *              - For a vector column, use either \ref GRN_OBJ_SET, \ref
- *                GRN_OBJ_INCR, \ref GRN_OBJ_DECR \ref GRN_OBJ_APPEND or
- *                \ref GRN_OBJ_PREPEND.
- *
- * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
- *         For example, \ref GRN_INVALID_ARGUMENT is returned if the
- *         record does not exist.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_obj_set_value</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_set_value(grn_ctx *ctx, grn_obj *obj, grn_id id, grn_obj *value, int flags)</PRE><p class="para-brief"> Update the value of a record identified by the given ID in the        specified object.</p><p>        This function updates the value of the record specified by `id` in the        given object (`obj`). If the corresponding record does not exist, it        returns GRN_INVALID_ARGUMENT. </p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">obj</dt><dd class="param-descr-index-1"> The target object where the value will be updated. </dd><dt class="param-name-index-2">id</dt><dd class="param-descr-index-2"> The ID of the record to be updated. </dd><dt class="param-name-index-3">value</dt><dd class="param-descr-index-3"> The value to be stored in the record. </dd><dt class="param-name-index-4">flags</dt><dd class="param-descr-index-4"> Only one flag can be specified, depending on the type of the              object (`obj`).              - For a table and a scalar column, use either GRN_OBJ_SET,                 GRN_OBJ_INCR,  or GRN_OBJ_DECR.               - For a vector column, use either GRN_OBJ_SET,  GRN_OBJ_INCR,  GRN_OBJ_DECR  GRN_OBJ_APPEND  or                GRN_OBJ_PREPEND. </dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.         For example, GRN_INVALID_ARGUMENT  is returned if the         record does not exist.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

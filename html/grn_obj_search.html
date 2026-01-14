@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_obj_search</TITLE></HEAD>
 <BODY>
-<H1>grn_obj_search</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_search(grn_ctx *ctx, grn_obj *obj, grn_obj *query, grn_obj *res, grn_operator op, grn_search_optarg *optarg)</PRE><PRE>/**
- * \brief Search for `obj` in `query`.
- *
- * \param ctx The context object.
- * \param obj The object to be searched.
- * \param query Search query.
- * \param res The table to store results.
- * \param op Logical operation of the table stored in `res` and the table of
- *           the search result.
- *           - \ref GRN_OP_OR
- *           - \ref GRN_OP_AND
- *           - \ref GRN_OP_AND_NOT
- *           - \ref GRN_OP_ADJUST
- * \param optarg Search options. For example, you can specify the search mode in
- *               \ref grn_search_optarg::mode.
- *               If \ref GRN_OP_EQUAL is specified for
- *               \ref grn_search_optarg::mode, it searching for equal record.
- *
- * \return \ref GRN_SUCCESS on success, the appropriate \ref grn_rc on error.
- *         For example, \ref GRN_INVALID_ARGUMENT is returned if `obj` is
- *         `NULL`.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_obj_search</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_search(grn_ctx *ctx, grn_obj *obj, grn_obj *query, grn_obj *res, grn_operator op, grn_search_optarg *optarg)</PRE><p class="para-brief"> Search for `obj` in `query`.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">obj</dt><dd class="param-descr-index-1"> The object to be searched. </dd><dt class="param-name-index-2">query</dt><dd class="param-descr-index-2"> Search query. </dd><dt class="param-name-index-3">res</dt><dd class="param-descr-index-3"> The table to store results. </dd><dt class="param-name-index-4">op</dt><dd class="param-descr-index-4"> Logical operation of the table stored in `res` and the table of           the search result.           - GRN_OP_OR            - GRN_OP_AND            - GRN_OP_AND_NOT            - GRN_OP_ADJUST  </dd><dt class="param-name-index-5">optarg</dt><dd class="param-descr-index-5"> Search options. For example, you can specify the search mode in               grn_search_optarg::mode.                If GRN_OP_EQUAL  is specified for               grn_search_optarg::mode,  it searching for equal record.</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.         For example, GRN_INVALID_ARGUMENT  is returned if `obj` is         `NULL`.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

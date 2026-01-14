@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <HTML><HEAD><TITLE>grn_get_lock_timeout</TITLE></HEAD>
 <BODY>
-<H1>grn_get_lock_timeout</H1><PRE>__attribute__((dllimport)) int grn_get_lock_timeout(void)</PRE><PRE>/**
- * \brief Retrieve the current lock timeout.
- *
- * Groonga uses a read lock-free mechanism. It allows multiple threads or
- * processes to perform read operations concurrently, even during write
- * operations. Write operations, in contrast, require locking to ensure data
- * consistency.
- *
- * When performing write operations:
- * - If acquiring a lock is not immediately available, it waits for 1
- *   millisecond before retrying.
- * - The retries continue until the cumulative wait time reaches the lock
- *   timeout duration.
- * - If the lock cannot be acquired within the specified timeout duration, the
- *   operation fails.
- *
- * The default lock timeout is set to 900,000 milliseconds (15 minutes).
- *
- * \return The current lock timeout in milliseconds.
- */</PRE><TABLE><TBODY><TR><TD>
+<H1>grn_get_lock_timeout</H1><PRE>__attribute__((dllimport)) int grn_get_lock_timeout(void)</PRE><p class="para-brief"> Retrieve the current lock timeout.</p><p> Groonga uses a read lock-free mechanism. It allows multiple threads or processes to perform read operations concurrently, even during write operations. Write operations, in contrast, require locking to ensure data consistency.</p><p> When performing write operations: - If acquiring a lock is not immediately available, it waits for 1   millisecond before retrying. - The retries continue until the cumulative wait time reaches the lock   timeout duration. - If the lock cannot be acquired within the specified timeout duration, the   operation fails.</p><p> The default lock timeout is set to 900,000 milliseconds (15 minutes).</p><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  The current lock timeout in milliseconds.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
 C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>
