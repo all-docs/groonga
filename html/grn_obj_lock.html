@@ -3,5 +3,5 @@
 <BODY>
 <H1>grn_obj_lock</H1><PRE>__attribute__((dllimport)) grn_rc grn_obj_lock(grn_ctx *ctx, grn_obj *obj, grn_id id, int timeout)</PRE><p class="para-brief"> Lock an object with a specified timeout.</p><p> You should ensure that every call to grn_obj_lock  is paired            with a call to grn_obj_unlock  to maintain lock balance.            Failing to do can lead to deadlocks.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">obj</dt><dd class="param-descr-index-1"> The target object to lock. </dd><dt class="param-name-index-2">id</dt><dd class="param-descr-index-2"> The ID of the target object. </dd><dt class="param-name-index-3">timeout</dt><dd class="param-descr-index-3"> The maximum time to wait for the lock, in seconds.</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.         For example, GRN_RESOURCE_DEADLOCK_AVOIDED  is returned if the         lock could not be acquired within the specified timeout.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
-C:\Users\timle\Downloads\groonga-main\include/groonga\groonga.h</TD><TR></TBODY></TABLE>
+groonga\groonga.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

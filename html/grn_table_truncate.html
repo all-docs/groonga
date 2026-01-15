@@ -3,5 +3,5 @@
 <BODY>
 <H1>grn_table_truncate</H1><PRE>__attribute__((dllimport)) grn_rc grn_table_truncate(grn_ctx *ctx, grn_obj *table)</PRE><p class="para-brief"> Delete all records in table.</p><p> Do not use in multi-threading. Because it might access data that            has already been deleted and crash when it does.</p><p> You need to reopen the target table and its columns in another            process when you use this in multi-processing. This removes            related files and creates new files. If you keep using the target            table and its columns in another process, the target table and            its columns in another process will touch removed data. It will            cause a crash or something wrong.</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object </dd><dt class="param-name-index-1">table</dt><dd class="param-descr-index-1"> The table</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
-C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+groonga\table.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

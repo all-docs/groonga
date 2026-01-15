@@ -3,5 +3,5 @@
 <BODY>
 <H1>grn_table_add</H1><PRE>__attribute__((dllimport)) grn_id grn_table_add(grn_ctx *ctx, grn_obj *table, const void *key, unsigned int key_size, int *added)</PRE><p class="para-brief"> Add a new record with `key` to the table and return its ID.        If `key` already exists in the table, returns the ID of the record.        For tables with GRN_OBJ_TABLE_NO_KEY, `key` and `key_size` are ignored</p><p> int *added -&gt; bool *added</p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object </dd><dt class="param-name-index-1">table</dt><dd class="param-descr-index-1"> Target table </dd><dt class="param-name-index-2">key</dt><dd class="param-descr-index-2"> Search key </dd><dt class="param-name-index-3">key_size</dt><dd class="param-descr-index-3"> Length of `key` </dd><dt class="param-name-index-4">added</dt><dd class="param-descr-index-4"> If a non `NULL` value is specified, 1 is set when a new record              is added, and 0 is set when it is an existing record</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  Record ID on success, GRN_ID_NIL on error</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
-C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+groonga\table.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>

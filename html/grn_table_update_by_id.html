@@ -3,5 +3,5 @@
 <BODY>
 <H1>grn_table_update_by_id</H1><PRE>__attribute__((dllimport)) grn_rc grn_table_update_by_id(grn_ctx *ctx, grn_obj *table, grn_id id, const void *dest_key, unsigned int dest_key_size)</PRE><p class="para-brief"> Update the key of the record matching ID in the table.        This operation supports only GRN_TABLE_DAT_KEY. </p><dl><dt class="param-name-index-0">ctx</dt><dd class="param-descr-index-0"> The context object. </dd><dt class="param-name-index-1">table</dt><dd class="param-descr-index-1"> The GRN_TABLE_DAT_KEY  table. </dd><dt class="param-name-index-2">id</dt><dd class="param-descr-index-2"> ID of record to be updated. </dd><dt class="param-name-index-3">dest_key</dt><dd class="param-descr-index-3"> New key. </dd><dt class="param-name-index-4">dest_key_size</dt><dd class="param-descr-index-4"> Size of `dest_key` in bytes.</dd></dl><div class="result-discussion"><p class="para-returns"><span class="word-returns">Returns</span>  GRN_SUCCESS  on success, the appropriate grn_rc  on error.         For example, GRN_OPERATION_NOT_PERMITTED  is returned if the         table other than GRN_TABLE_DAT_KEY  is specified.</p></div><TABLE><TBODY><TR><TD>
 Defined in file: </TD><TD>
-C:\Users\timle\Downloads\groonga-main\include/groonga/table.h</TD><TR></TBODY></TABLE>
+groonga\table.h</TD><TR></TBODY></TABLE>
 </BODY></HTML>
